@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/americanbite"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:background="@color/black_semi_transparent"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98.32999dip"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        android:src="@drawable/log" />
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/layoutSlide"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/logo"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/connectViaEmail_lnrLayout"
+            android:layout_width="270.0dip"
+            android:layout_height="42.666992dip"
+            android:layout_marginLeft="44.329987dip"
+            android:layout_marginTop="93.29999dip"
+            android:background="@drawable/curved_corners_email_login"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="47.669983dip"
+                android:layout_height="fill_parent"
+                android:padding="10.0dip"
+                android:src="@drawable/ic_facebook"
+                android:visibility="invisible"/>
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="23.329987dip"
+                android:layout_gravity="center_vertical"
+                android:background="#4dffffff"
+                android:visibility="invisible"
+                />
+
+            <com.think_different.am.util.AmericanBiteTextView
+                android:id="@+id/connectViaEmail_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="20.0dip"
+                android:text="Connect via Email"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/connectViaGooglePlus_lnrLayout"
+            android:layout_width="270.0dip"
+            android:layout_height="42.666992dip"
+            android:layout_below="@+id/connectViaEmail_lnrLayout"
+            android:layout_marginLeft="44.329987dip"
+            android:layout_marginTop="16.669983dip"
+            android:background="@drawable/curved_corners_fb_login"
+            android:clickable="false"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="47.669983dip"
+                android:layout_height="fill_parent"
+                android:padding="12.0dip"
+                android:src="@drawable/ic_facebook" />
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="23.329987dip"
+                android:layout_gravity="center_vertical"
+                android:background="#4dffffff" />
+
+            <com.think_different.am.util.AmericanBiteTextView
+                android:id="@+id/connectViaGooglePlus_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="20.0dip"
+                android:text="Connect via Facebook"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+
+        <com.think_different.am.util.AmericanbiteButton
+            android:id="@+id/connectViaGoogle"
+            android:layout_width="270.0dip"
+            android:layout_height="42.666992dip"
+            android:layout_below="@+id/connectViaFacebook_lnrLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="16.669983dip"
+            android:background="@drawable/curved_corners_white_stroke"
+            android:text="Connect via Google"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5.0dip"
+            android:orientation="vertical">
+
+            <com.think_different.am.util.AmericanBiteTextView
+                android:id="@+id/txtTerms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/notNowLetMeIn"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="termsconditions"
+
+
+                android:textColor="@color/termscolorgrey"
+                android:textSize="14.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTerms"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10.0dip"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.think_different.am.util.AmericanBiteTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="our"
+                    android:textColor="@color/termscolorgrey"
+                    android:textSize="14.0sp" />
+
+                <com.think_different.am.util.AmericanBiteTextView
+                    android:id="@+id/tos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2.0dip"
+                    android:autoLink="all"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:linksClickable="false"
+                    android:text="terms of service"
+                    android:textColor="@android:color/white"
+                    android:textSize="14.0sp" />
+
+                <com.think_different.am.util.AmericanBiteTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2.0dip"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="and"
+                    android:textColor="@color/termscolorgrey"
+                    android:textSize="14.0sp" />
+
+                <com.think_different.am.util.AmericanBiteTextView
+                    android:id="@+id/priv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2.0dip"
+                    android:autoLink="all"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:linksClickable="false"
+                    android:text="privacy"
+                    android:textColor="@android:color/white"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

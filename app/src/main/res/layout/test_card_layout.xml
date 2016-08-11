@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/item_card"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/buger" />
+
+
+            <TextView
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_image"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:text="King Burger"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/my_primary" />
+
+            <TextView
+                android:id="@+id/item_discrp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_name"
+                android:padding="8dp"
+                android:text="Hamburgers are often served with cheese, lettuce, tomato, bacon, onion, pickles, and condiments such as mustard, mayonnaise, ketchup, relish, and chiles."
+                android:textColor="#000000"
+                android:maxLength="100"/>
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:alpha="0.8"
+                android:id="@+id/text_cost"
+                android:background="@android:color/black"
+                android:paddingTop="10dp"
+                android:text="5000"
+                android:textAlignment="center"
+                android:textColor="#fff" />
+            <TextView
+
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textColor="#fff"
+                android:text="@string/Rs"
+                android:padding="10dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_discrp"
+
+                android:orientation="horizontal"
+                android:paddingBottom="4.0dip"
+                android:paddingLeft="180.0dip"
+
+                >
+
+                <TextView
+
+                    android:id="@+id/plus_button"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:background="@drawable/round"
+                    android:padding="5dip"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/totalNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dip"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/minus_button"
+                    android:layout_width="30.0dip"
+                    android:layout_height="30.0dip"
+                    android:background="@drawable/round"
+                    android:padding="5dip"
+                    android:text="-"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+
+
